@@ -29,53 +29,52 @@ const formattedCount = computed(() => {
   flex-direction: column;
   align-items: center;
   position: relative;
+  width: 0.1rem;
 }
 
 .membership-badge__icon {
-  background-color: white;
-  border: 2px solid #FF5800;
-  border-radius: 50%;
-  width: 32px;
-  height: 32px;
+  background-color: transparent;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   position: relative;
   z-index: 2;
-  margin-bottom: -16px;
+  height: 35px;
+  margin-bottom: -18px;
 }
 
 .membership-badge__icon-img {
-  width: 16px;
-  height: 16px;
+  width: 35px;
+  margin-bottom: 16px;
+  height: auto;
   object-fit: contain;
 }
 
 .membership-badge__content {
-  background-color: white;
-  border: 2px solid #FF5800;
-  border-radius: 12px;
-  padding: 24px 16px 12px 16px;
+  background-color: #FF5800;
+  border-radius: 8px;
+  padding: 12px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-width: 80px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  width: 25px;
+  height: 25px;
+  box-shadow: 0 4px 8px rgba(255, 88, 0, 0.2);
 }
 
 .membership-badge__count {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #FF5800;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
   line-height: 1;
   margin-bottom: 4px;
 }
 
 .membership-badge__label {
   font-size: 0.75rem;
-  font-weight: 500;
-  color: #666;
+  font-weight: medium;
+  color: white;
   text-transform: lowercase;
 }
 </style>

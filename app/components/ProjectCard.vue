@@ -9,8 +9,9 @@
           <span class="info-region__value">{{ formatDate(project.establishmentDate) }}</span>
         </div>
         <div class="info-region__item">
-          <span class="info-region__label">Members:</span>
-          <span class="info-region__value">{{ project.memberCount }}</span>
+          <MembershipBadge
+            :member-count="25"
+          />
         </div>
         <div class="info-region__item">
           <span class="info-region__label">Active Regions:</span>
@@ -69,7 +70,9 @@
 </template>
 
 <script setup lang="ts">
+import { ref } from 'vue'
 import type { Project } from '../types/project'
+import MembershipBadge from './MembershipBadge.vue'
 
 interface Props {
   project: Project
